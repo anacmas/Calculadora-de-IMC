@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora IMC</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <section class="area-1">
+                <div class="titulo-calculadora">
+                    <h1>Calculadora de IMC</h1>
+                </div>
+                <div class="container-calculadora">
+                    <div class="cor-calculadora">
+                        <form class="calculadora">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" required>
+
+                            <label for="peso">Peso</label>
+                            <input type="text" id="peso" required>
+
+                            <label for="altura">Altura</label>
+                            <input type="altura" id="altura" required>
+                        </form>
+                        <button>
+                            Calcular
+                        </button>
+                    </div>
+                </div>
+                <div class="resultado">
+                    
+                </div>
+            </section>
+            <section class="area-2">
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Tabela IMC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IMC</td>
+                            <td>Classificação</td>
+                        </tr>
+                        <tr>
+                            <td> < 18,5 </td>
+                            <td>Peso baixo</td>
+                        </tr>
+                        <tr>
+                            <td>18,5 - 24,9</td>
+                            <td>Peso Normal</td>
+                        </tr>
+                        <tr>
+                            <td> 25,0 - 29,9</td>
+                            <td>Sobrepeso</td>
+                        </tr>
+                        <tr>
+                            <td>30,0 - 34,9</td>
+                            <td>Obesidade grau I</td>
+                        </tr>
+                        <tr>
+                            <td>35,0 - 39,9</td>
+                            <td>Obesidade grau II</td>
+                        </tr>
+                        <tr>
+                            <td>&#10878; 40,4</td>
+                            <td>Obesidade grau II</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <footer>
+				<br><p>Copyright &copy; 2022. All Rights Reserved. Por <a href="index.html">Ana C. Milos</a></p>
+			</footer>
+        </main>
+    </body>
+</html>
+
+<script>
+
+    function imprime(frase) {
+
+        document.write(frase);
+
+    }
+
+    var input = document.querySelector("input")
+
+    document.write('Seu nome é ' + input.value()) 
+
+</script>
