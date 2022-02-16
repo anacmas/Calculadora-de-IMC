@@ -66,6 +66,16 @@ form {
     background: #ffffffe5;
 }
 
+.cor-calculadora input:hover {
+    box-shadow: 0px 1px 5px 3px #0000002f;
+    transition: 0.3s;
+}
+
+.calculadora p {
+    font-size: small;
+    align-self: flex-end;
+}
+
 button {
     margin-top: 1rem;
     background: var(--azul);
@@ -75,96 +85,32 @@ button {
     border-style: none;
 	box-shadow: 0px 3px 3px 1px #05090f7a;
     color: #e7e7e7;
-    font-weight: bold;
+    font-weight: bold;   
 }
 
-.area-2 {
-    margin-top: 4rem;
-    width: 100%;
+button:hover {
+    transform: scale(1.08);
+    transition: 0.3s;
+    background: #2e9ac5;
+    cursor: pointer;
 }
 
-table {
+button:active {
+    background: #3485a5;
+}
+
+.resultado {
+    align-self: center;
+    
+    width: 18%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
-}
-
-thead {
-    background: var(--azul);
-    border-radius: 5px 5px 0 0;
-    font-weight: bold;
-    color: #e7e7e7;
-    width: 100%;
-    padding: 0.5rem;
-}
-
-td {
-    padding: 0.5rem;
-    width: 50%;
-
-}
-
-
-tbody {
-    background: #ffffff94;
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 0 0 10px 10px;
-}
-
-tr {
-    display: flex;
-    width: 100%;
-}
-
-tbody tr:first-child {
-    font-weight: bold;
-}
-
-tbody tr:nth-child(2) {
-    background: #e1f2b3;
-}    
-
-tbody tr:nth-child(3) {
-    background: #c2f2b3;
-}  
-
-tbody tr:nth-child(4) {
-    background: #b3cef2;
-}  
-
-tbody tr:nth-child(5) {
-    background: #b5b3f2;
-}  
-
-tbody tr:nth-child(6) {
-    background: #f2b3db;
-}  
-
-tbody tr:nth-child(7) {
-    background: #f28aa0;
-}  
-
-footer {
-	font-family: 'Open Sans',Andale Mono,monospace;
-	margin-top: 2rem;
-	background: #dbdbdb;
-	height: 100%;
-	text-align: center;
-	color: #1c1c1c;
-	height: 3em;
-}
-
-
-footer a {
-	text-decoration: none;
-	color: #1c1c1c;
-}
-
-footer a:hover {
-	transition: 0.15s;
-	color: #454545;
-	text-decoration: underline;
-	font-weight: bold;
+    align-items: center;
+    text-align: center;
+    background: #ffffff3a;
+    padding: 1% 1.7%;
+    border-radius: 10px;
+    margin: 1% 0;
+	font-family: 'Open Sans', Andale Mono, monospace;
+    font-weight: 600;
+    color: #1b1b1b;
 }
