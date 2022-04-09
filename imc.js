@@ -15,7 +15,7 @@ function imc(){
         if(valorIMC < 18.5){
             classificacao = 'abaixo do peso';
         } else if(valorIMC < 25){
-            classificacao = 'com o peso considerado normal';
+            classificacao = 'normal';
         } else if(valorIMC < 30){
             classificacao = 'levemente acima do normal';
         } else if(valorIMC < 35){
@@ -35,3 +35,10 @@ function imc(){
 }
 
 calcular.addEventListener('click', imc);
+
+document.addEventListener("keypress", function(e) {
+    if(e.key === 'Enter') {
+        const botao = document.querySelector("#calcular");
+        botao.click();
+    }
+})
