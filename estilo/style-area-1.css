@@ -5,6 +5,10 @@
 
 body {
     background: linear-gradient(#73A49B 40%, #42645d);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 100%;
     font-family: 'Lato', sans-serif;
 }
 

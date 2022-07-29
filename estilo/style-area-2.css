@@ -73,13 +73,18 @@ tbody tr:nth-child(7) {
 }  
 
 footer {
-	font-family: 'Open Sans',Andale Mono,monospace;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    bottom: 0;
+	font-family: 'Open Sans', Andale Mono ,monospace;
 	margin-top: 2rem;
 	background: #dbdbdb;
-	height: 100%;
+	width: 100%;
 	text-align: center;
 	color: #1c1c1c;
-	height: 3em;
+	height: 4em;
 }
 
 
@@ -93,4 +98,8 @@ footer a:hover {
 	color: #454545;
 	text-decoration: underline;
 	font-weight: bold;
+}
+
+.texto-copyright {
+    padding: 1rem;
 }

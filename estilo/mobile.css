@@ -5,18 +5,18 @@
     }
 
     .cor-calculadora {
-        width: 80%;
+        width: 40%;
         padding: 5%;
     }
 
     .resultado {
-        width: 80%;
+        width: 40%;
         padding: 2% 5%;
         margin: 3% 0;
     }
 
     table {
-        width: 90%;
+        width: 50%;
     }
 
     thead {
@@ -25,5 +25,15 @@
 
     tbody {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 627px) {
+    .cor-calculadora, .resultado {
+        width: 80%;
+    }
+
+    table {
+        width: 90%;
     }
 }
